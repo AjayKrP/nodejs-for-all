@@ -4,7 +4,7 @@ const controller = require('../controller');
 
 router.get('/', controller.get);
 router.post('/', controller.set);
-router.delete('/', controller.delete);
-router.put('/', controller.update);
+router.delete('/:id', controller.delete);
+router.put('/:id', controller.update);
 
 module.exports = router;
